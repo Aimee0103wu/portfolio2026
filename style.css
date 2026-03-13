@@ -1,14 +1,29 @@
-@keyframes logo-pulse {
-    0%, 100% { opacity: 1; }
-    50% { opacity: 0.3; } /* The 'blink' depth */
-}
-
-/* The 'Thinking' State */
+/* Update your existing .logo-blinking or add this */
 .logo-blinking {
-    animation: logo-pulse 1.8s ease-in-out infinite;
+    animation: logo-pulse 1.5s ease-in-out infinite;
+    transform-origin: center;
 }
 
-/* Base class for the smooth transition when done */
-.logo-status-icon {
-    transition: all 0.5s ease;
+@keyframes logo-pulse {
+    0% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    50% {
+        opacity: 0.4;
+        transform: scale(0.92); /* Subtle shrink makes it feel like it's breathing */
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Ensure the SVG fits nicely in the chat bubble */
+.logo-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
 }
