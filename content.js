@@ -3,7 +3,7 @@ const GENERAL_ANSWERS = {
         <div class="space-y-6">
             <p>I'm currently open to new opportunities and collaborations. Here is how you can reach me:</p>
             <div class="grid grid-cols-1 gap-4 max-w-md">
-                <a href="mailto:aimee.wu@example.com" class="flex items-center gap-4 p-4 bg-white border border-gray-100 rounded-2xl shadow-sm hover:border-blue-300 transition group">
+                <a href="mailto:aimee0103wu@gmail.com" class="flex items-center gap-4 p-4 bg-white border border-gray-100 rounded-2xl shadow-sm hover:border-blue-300 transition group">
                     <div class="bg-blue-50 p-3 rounded-xl text-blue-600 group-hover:bg-blue-600 group-hover:text-white transition">
                         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
                     </div>
@@ -127,21 +127,21 @@ const PROJECT_CONTENT = {
                     <h3 class="text-xl font-bold text-gray-900 mb-2">1. Proactive Access Readiness</h3>
                     <p class="text-gray-700 mb-4">We shifted from "connect and fail" to validating accessibility upfront. In collaboration with engineering, we integrated platform APIs to surface signals across three critical layers:</p>
                     
-                    <div class="flex flex-row gap-3 mb-8 w-full"> 
+                    <div class="flex flex-col lg:flex-row gap-3 mb-8 w-full"> 
 
-                        <div class="flex-1 bg-white p-4 rounded-xl border border-gray-100 shadow-sm flex flex-col">
+                        <div class="w-full lg:flex-1 bg-white p-4 rounded-xl border border-gray-100 shadow-sm flex flex-col">
                             <div class="flex items-center gap-2 mb-3">
                                 <div class="bg-blue-50 p-1.5 rounded-lg text-blue-600 shrink-0">
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
                                         <path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 0 0 8.716-6.747M12 21a9.004 9.004 0 0 1-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 0 1 7.843 4.582M12 3a8.997 8.997 0 0 0-7.843 4.582m15.686 0A11.953 11.953 0 0 1 12 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0 1 21 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0 1 12 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 0 1 3 12c0-1.605.42-3.113 1.157-4.418" />
                                     </svg>
                                 </div>
-                                <span class="font-bold text-blue-600 whitespace-nowrap">Policy layer</span>
+                                <span class="font-bold text-blue-600 whitespace-normal lg:whitespace-nowrap break-words">Policy layer</span>
                             </div>
                             <p class="text-sm text-gray-700 leading-relaxed">Global and subscription level security rules and policies.</p>
                         </div>
 
-                        <div class="flex-1 bg-white p-4 rounded-xl border border-gray-100 shadow-sm flex flex-col">
+                        <div class="w-full lg:flex-1 bg-white p-4 rounded-xl border border-gray-100 shadow-sm flex flex-col">
                             <div class="flex items-center gap-2 mb-3">
                                 <div class="bg-blue-50 p-1.5 rounded-lg text-blue-600 shrink-0">
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
@@ -149,19 +149,19 @@ const PROJECT_CONTENT = {
                                         <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
                                     </svg>
                                 </div>
-                                <span class="font-bold text-blue-600 whitespace-nowrap">Subnet layer</span>
+                                <span class="font-bold text-blue-600 whitespace-normal lg:whitespace-nowrap break-words">Subnet layer</span>
                             </div>
                             <p class="text-sm text-gray-700 leading-relaxed">Security rules governing the entire subnet traffic.</p>
                         </div>
 
-                        <div class="flex-1 bg-white p-4 rounded-xl border border-gray-100 shadow-sm flex flex-col">
+                        <div class="w-full lg:flex-1 bg-white p-4 rounded-xl border border-gray-100 shadow-sm flex flex-col">
                             <div class="flex items-center gap-2 mb-3">
                                 <div class="bg-blue-50 p-1.5 rounded-lg text-blue-600 shrink-0">
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
                                         <path stroke-linecap="round" stroke-linejoin="round" d="M9 17.25v1.007a3 3 0 0 1-.879 2.122L7.5 21h9l-.621-.621A3 3 0 0 1 15 18.257V17.25m6-12V15a2.25 2.25 0 0 1-2.25 2.25H5.25A2.25 2.25 0 0 1 3 15V5.25m18 0A2.25 2.25 0 0 0 18.75 3H5.25A2.25 2.25 0 0 0 3 5.25m18 0V12a2.25 2.25 0 0 1-2.25 2.25H5.25A2.25 2.25 0 0 1 3 12V5.25" />
                                     </svg>
                                 </div>
-                                <span class="font-bold text-blue-600 whitespace-nowrap">NIC layer</span>
+                                <span class="font-bold text-blue-600 whitespace-normal lg:whitespace-nowrap break-words">NIC layer</span>
                             </div>
                             <p class="text-sm text-gray-700 leading-relaxed">VM-specific security rules that permit/deny inbound paths.</p>
                         </div>
@@ -202,8 +202,8 @@ const PROJECT_CONTENT = {
                     <p class="text-gray-700">Following the 100% production rollout, we monitored support volume and user success signals to validate the impact of the proactive diagnostic approach.</p>
                 </div>
 
-                <div class="flex flex-row gap-4 w-full justify-start">
-                    <div class="w-full md:w-1/2 p-5 bg-white border border-gray-200 rounded-xl shadow-sm flex flex-col justify-center">
+                <div class="flex flex-col lg:flex-row gap-4 w-full justify-start">
+                    <div class="w-full lg:flex-1 md:w-1/2 p-5 bg-white border border-gray-200 rounded-xl shadow-sm flex flex-col justify-center">
                         <p class="text-3xl font-bold text-blue-600">25% Reduction</p>
                         <p class="text-sm text-gray-600 font-medium mt-1">In monthly support cases (~100 fewer tickets per month)</p>
                     </div>
@@ -335,9 +335,9 @@ const PROJECT_CONTENT = {
                 <div>
                     <h3 class="text-xl font-bold text-gray-900 mb-2">1. Proactive Deployability Guidance</h3>
                     <p class="text-gray-700 mb-4">To solve for performance and visibility, I focused on <strong>Intent-Based Timing</strong>. Rather than running heavy logic constantly, we triggered evaluations when users indicated they were finalizing their choices.</p>
-                    <div class="flex flex-row gap-3 mb-8 w-full"> 
+                    <div class="flex flex-col lg:flex-row gap-3 mb-8 w-full"> 
 
-                        <div class="flex-1 bg-white p-4 rounded-xl border border-gray-100 shadow-sm flex flex-col transition-all hover:shadow-md">
+                        <div class="w-full lg:flex-1 bg-white p-4 rounded-xl border border-gray-100 shadow-sm flex flex-col transition-all hover:shadow-md">
                             <div class="flex items-center gap-2 mb-3">
                                 <div class="bg-blue-50 p-1.5 rounded-lg text-blue-600 shrink-0">
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
@@ -345,21 +345,21 @@ const PROJECT_CONTENT = {
                                         <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
                                     </svg>
                                 </div>
-                                <span class="font-bold text-blue-600 whitespace-nowrap">Navigation intent</span>
+                                <span class="font-bold text-blue-600 whitespace-normal lg:whitespace-nowrap break-words">Navigation intent</span>
                             </div>
                             <p class="text-sm text-gray-700 leading-relaxed">
                                 We run the API when customers navigate away from the primary config page.
                             </p>
                         </div>
 
-                        <div class="flex-1 bg-white p-4 rounded-xl border border-gray-100 shadow-sm flex flex-col transition-all hover:shadow-md">
+                        <div class="w-full lg:flex-1 bg-white p-4 rounded-xl border border-gray-100 shadow-sm flex flex-col transition-all hover:shadow-md">
                             <div class="flex items-center gap-2 mb-3">
                                 <div class="bg-blue-50 p-1.5 rounded-lg text-blue-600 shrink-0">
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
                                         <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126ZM12 15.75h.007v.008H12v-.008Z" />
                                     </svg>
                                 </div>
-                                <span class="font-bold text-blue-600 whitespace-nowrap">High-visibility disclosure</span>
+                                <span class="font-bold text-blue-600 whitespace-normal lg:whitespace-nowrap break-words">High-visibility disclosure</span>
                             </div>
                             <p class="text-sm text-gray-700 leading-relaxed">
                                 Initial designs used modal interrupts to ensure the risk was unmistakable before downstream configuration began.
@@ -407,12 +407,12 @@ const PROJECT_CONTENT = {
                     <p class="text-gray-700">By adjusting the friction of our guidance based on telemetry, we transformed a major platform pain point into a high-confidence deployment path.</p>
                 </div>
 
-                <div class="flex flex-row gap-4 w-full">
-                    <div class="flex-1 p-5 bg-white border border-gray-200 rounded-xl shadow-sm flex flex-col justify-center">
+                <div class="flex flex-col lg:flex-row gap-4 w-full">
+                    <div class="w-full lg:flex-1 p-5 bg-white border border-gray-200 rounded-xl shadow-sm flex flex-col justify-center">
                         <p class="text-3xl font-bold text-blue-600">35% Reduction</p>
                         <p class="text-sm text-gray-600 font-medium mt-1">In allocation failures</p>
                     </div>
-                    <div class="flex-1 p-5 bg-white border border-gray-200 rounded-xl shadow-sm flex flex-col justify-center">
+                    <div class="w-full lg:flex-1 p-5 bg-white border border-gray-200 rounded-xl shadow-sm flex flex-col justify-center">
                         <p class="text-3xl font-bold text-blue-600">97% Success</p>
                         <p class="text-sm text-gray-600 font-medium mt-1">Rate when using recommendations</p>
                     </div>
@@ -560,40 +560,40 @@ const PROJECT_CONTENT = {
                     <p class="text-gray-700 mb-4">To ensure 100% compatibility for attachment, I worked closely with PM and engineering partners to define exactly which VM configurations must be carried forward and how those decisions should be handled automatically.
                     </p>
 
-                    <div class="flex flex-row gap-3 mb-8 w-full"> 
+                    <div class="flex flex-col lg:flex-row gap-3 mb-8 w-full"> 
                         
-                        <div class="flex-1 bg-white p-4 rounded-xl border border-gray-100 shadow-sm flex flex-col">
+                        <div class="w-full lg:flex-1 bg-white p-4 rounded-xl border border-gray-100 shadow-sm flex flex-col">
                             <div class="flex items-center gap-2 mb-3">
                                 <div class="bg-blue-50 p-1.5 rounded-lg text-blue-600 shrink-0">
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
                                         <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12a7.5 7.5 0 0 0 15 0m-15 0a7.5 7.5 0 1 1 15 0m-15 0H3m16.5 0H21m-1.5 0H12m-8.457 3.077 1.41-.513m14.095-5.13 1.41-.513M5.106 17.785l1.15-.964m11.49-9.642 1.149-.964M7.501 19.795l.75-1.3m7.5-12.99.75-1.3m-6.063 16.658.26-1.477m2.605-14.772.26-1.477m0 17.726-.26-1.477M10.698 4.614l-.26-1.477M16.5 19.794l-.75-1.299M7.5 4.205 12 12m6.894 5.785-1.149-.964M6.256 7.178l-1.15-.964m15.352 8.864-1.41-.513M4.954 9.435l-1.41-.514M12.002 12l-3.75 6.495" />
                                     </svg>
                                 </div>
-                                <span class="font-bold text-blue-600 whitespace-nowrap">Settings Preservation</span>
+                                <span class="font-bold text-blue-600 whitespace-normal lg:whitespace-nowrap break-words">Settings Preservation</span>
                             </div>
                             <p class="text-sm  text-gray-700 leading-relaxed">Preserving critical source VM settings including OS image, disk structure, networking, and identity extensions automatically.</p>
                         </div>
 
-                        <div class="flex-1 bg-white p-4 rounded-xl border border-gray-100 shadow-sm flex flex-col">
+                        <div class="w-full lg:flex-1 bg-white p-4 rounded-xl border border-gray-100 shadow-sm flex flex-col">
                             <div class="flex items-center gap-2 mb-3">
                                 <div class="bg-blue-50 p-1.5 rounded-lg text-blue-600 shrink-0">
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
                                         <path stroke-linecap="round" stroke-linejoin="round" d="M9 6.75V15m6-6v8.25m.503 3.498 4.875-2.437c.381-.19.622-.58.622-1.006V4.82c0-.836-.88-1.38-1.628-1.006l-3.869 1.934c-.317.159-.69.159-1.006 0L9.503 3.252a1.125 1.125 0 0 0-1.006 0L3.622 5.689C3.24 5.88 3 6.27 3 6.695V19.18c0 .836.88 1.38 1.628 1.006l3.869-1.934c.317-.159.69-.159 1.006 0l4.994 2.497c.317.158.69.158 1.006 0Z" />
                                     </svg>
                                 </div>
-                                <span class="font-bold text-blue-600 whitespace-nowrap">Zonal Readiness</span>
+                                <span class="font-bold text-blue-600 whitespace-normal lg:whitespace-nowrap break-words">Zonal Readiness</span>
                             </div>
                             <p class="text-sm text-gray-700 leading-relaxed">Deploying the VMSS to match the source VM’s availability characteristics for smooth future scale-out.</p>
                         </div>
 
-                        <div class="flex-1 bg-white p-4 rounded-xl border border-gray-100 shadow-sm flex flex-col">
+                        <div class="w-full lg:flex-1 bg-white p-4 rounded-xl border border-gray-100 shadow-sm flex flex-col">
                             <div class="flex items-center gap-2 mb-3">
                                 <div class="bg-blue-50 p-1.5 rounded-lg text-blue-600 shrink-0">
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
                                         <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v17.25m0 0c-1.472 0-2.882.265-4.185.75M12 20.25c1.472 0 2.882.265 4.185.75M18.75 4.97A48.416 48.416 0 0 0 12 4.5c-2.291 0-4.545.16-6.75.47m13.5 0c1.01.143 2.01.317 3 .52m-3-.52 2.62 10.726c.122.499-.106 1.028-.589 1.202a5.988 5.988 0 0 1-2.031.352 5.988 5.988 0 0 1-2.031-.352c-.483-.174-.711-.703-.59-1.202L18.75 4.971Zm-16.5.52c.99-.203 1.99-.377 3-.52m0 0 2.62 10.726c.122.499-.106 1.028-.589 1.202a5.989 5.989 0 0 1-2.031.352 5.989 5.989 0 0 1-2.031-.352c-.483-.174-.711-.703-.59-1.202L5.25 4.971Z" />
                                     </svg>
                                 </div>
-                                <span class="font-bold text-blue-600 whitespace-nowrap">Scaling Defaults</span>
+                                <span class="font-bold text-blue-600 whitespace-normal lg:whitespace-nowrap break-words">Scaling Defaults</span>
                             </div>
                             <p class="text-sm text-gray-700 leading-relaxed">Adopting fixed-instance scaling modes by default to ensure success without requiring complex user decisions.</p>
                         </div>
@@ -639,12 +639,12 @@ const PROJECT_CONTENT = {
                     <p class="text-gray-700">In A/B testing with 10% of portal traffic, the results validated the "Quick Create" side-quest as a transformative UX model.</p>
                 </div>
 
-                <div class="flex flex-row gap-4 w-full">
-                    <div class="flex-1 p-5 bg-gray-50 border border-gray-200 rounded-xl flex flex-col justify-center">
+                    <div class="flex flex-col lg:flex-row gap-4 w-full">
+                    <div class="w-full lg:flex-1 p-5 bg-gray-50 border border-gray-200 rounded-xl flex flex-col justify-center">
                         <p class="text-3xl font-bold text-gray-400">2.2%</p>
                         <p class="text-sm text-gray-500 font-medium mt-1">Control Group Success</p>
                     </div>
-                    <div class="flex-1 p-5 bg-white border border-blue-200 rounded-xl shadow-sm flex flex-col justify-center relative overflow-hidden">
+                    <div class="w-full lg:flex-1 p-5 bg-white border border-blue-200 rounded-xl shadow-sm flex flex-col justify-center relative overflow-hidden">
                         <div class="absolute top-0 right-0 bg-blue-600 text-white text-[10px] px-2 py-0.5 font-bold uppercase">Treatment</div>
                         <p class="text-3xl font-bold text-blue-600">88.1%</p>
                         <p class="text-sm text-gray-600 font-medium mt-1">Quick-Create Success</p>

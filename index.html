@@ -32,24 +32,36 @@
         ::-webkit-scrollbar-thumb { background: #e5e7eb; border-radius: 10px; }
     </style>
 </head>
-<body class="bg-white text-gray-900 h-screen flex overflow-hidden">
-
-    <aside class="w-72 bg-white border-r border-gray-200 flex flex-col p-6 overflow-y-auto">
-        <nav id="sidebar-nav" class="space-y-2 pt-32">
-            <h2 class="text-gray-500 text-sm font-semibold mb-6">Chats</h2>
-            <a href="index.html" id="nav-home" class="nav-item flex items-center gap-3 text-gray-600 px-4 py-2 rounded-lg transition hover:bg-gray-200">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
-                </svg>
-                Home
-            </a>
-            
-            <a href="#" id="nav-vm-connect" onclick="startProject('vm-connect')"class="nav-item block text-gray-600 hover:bg-gray-200 px-4 py-2 rounded-lg transition">Connect to virtual machine</a>
-            <a href="#" id="nav-capacity-recommender" onclick="startProject('capacity-recommender')" class="nav-item block text-gray-600 hover:bg-gray-200 px-4 py-2 rounded-lg transition">Capacity recommender</a>
-            <a href="#" id="nav-vmss-attach" onclick="startProject('vmss-attach')" class="nav-item block text-gray-600 hover:bg-gray-200 px-4 py-2 rounded-lg transition">VMSS create for VM attachment</a>
-        </nav>
+<body class="bg-gray-100 text-gray-900 h-screen overflow-hidden">
+    <div id="sidebar-backdrop" class="hidden fixed inset-0 bg-black/50 z-20 md:hidden"></div>
+    <aside class="bg-white flex flex-col p-6 overflow-hidden transition-all z-40 w-20 fixed left-0 top-0 h-full">
+        <div class="flex items-center justify-between flex-shrink-0">
+        <a href="#" class="flex items-center gap-3">
+            <img src="images/Logo.svg" alt="Logo" class="h-8 w-8">
+            <span class="text-lg font-bold text-gray-800 sidebar-title hidden">Aimee Wu</span>
+        </a>
+        <button id="hamburger-button" class="bg-white p-2 rounded-md">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            </svg>
+        </button>
+    </div>
+        <nav id="sidebar-nav" class="space-y-2 pt-12 md:pt-32 opacity-0">
+        <h2 class="text-gray-500 text-sm font-semibold mb-6">Chats</h2>
+        <a href="index.html" id="nav-home" class="nav-item flex items-center gap-3 text-gray-600 px-4 py-2 rounded-lg transition hover:bg-gray-200">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+            </svg>
+            Home
+        </a>
+        
+        <a href="#" id="nav-vm-connect" onclick="startProject('vm-connect')"class="nav-item block text-gray-600 hover:bg-gray-200 px-4 py-2 rounded-lg transition">Connect to virtual machine</a>
+        <a href="#" id="nav-capacity-recommender" onclick="startProject('capacity-recommender')" class="nav-item block text-gray-600 hover:bg-gray-200 px-4 py-2 rounded-lg transition">Capacity recommender</a>
+        <a href="#" id="nav-vmss-attach" onclick="startProject('vmss-attach')" class="nav-item block text-gray-600 hover:bg-gray-200 px-4 py-2 rounded-lg transition">VMSS create for VM attachment</a>
+    </nav>
+    <div class="flex-grow"></div>
     </aside>
-    <main class="flex-1 flex flex-col relative h-full bg-gray-100 overflow-hidden">
+    <main class="flex-1 flex flex-col relative h-full bg-gray-100 overflow-hidden ml-20">
     
     <div id="main-chat-container" class="flex-1 overflow-y-auto p-12 lg:px-24 pb-[80vh] relative">
         <div id="landing-content" class="max-w-4xl mx-auto space-y-12">

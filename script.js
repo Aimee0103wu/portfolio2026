@@ -289,4 +289,59 @@ document.addEventListener('DOMContentLoaded', () => {
             document.body.style.overflow = 'auto';
         }
     };
+
+    const hamburgerButton = document.getElementById('hamburger-button');
+    const sidebar = document.querySelector('aside');
+    const sidebarNav = document.getElementById('sidebar-nav');
+    const mainContent = document.querySelector('main');
+    const sidebarTitle = document.querySelector('.sidebar-title');
+
+    let isSidebarOpen = false;
+    function applySidebarState(open) {
+        isSidebarOpen = !!open;
+        if (!sidebar || !mainContent || !sidebarNav) return;
+
+        const backdrop = document.getElementById('sidebar-backdrop');
+        if (isSidebarOpen) {
+            sidebar.classList.remove('w-20');
+            sidebar.classList.add('w-72');
+            if (sidebarTitle) sidebarTitle.classList.remove('hidden');
+            mainContent.classList.remove('ml-20');
+            mainContent.classList.add('ml-72');
+            sidebarNav.classList.remove('opacity-0');
+            // On mobile, show the backdrop when the sidebar is open
+            if (backdrop && window.innerWidth < 768) backdrop.classList.remove('hidden');
+        } else {
+            sidebar.classList.remove('w-72');
+            sidebar.classList.add('w-20');
+            if (sidebarTitle) sidebarTitle.classList.add('hidden');
+            mainContent.classList.remove('ml-72');
+            mainContent.classList.add('ml-20');
+            sidebarNav.classList.add('opacity-0');
+            // Always hide the backdrop when the sidebar is closed
+            if (backdrop) backdrop.classList.add('hidden');
+        }
+    }
+
+    function toggleSidebar() { applySidebarState(!isSidebarOpen); }
+
+    if (hamburgerButton) hamburgerButton.addEventListener('click', toggleSidebar);
+
+    // Initialize: expanded on desktop, collapsed on mobile
+    const isDesktop = window.innerWidth >= 768;
+    applySidebarState(isDesktop);
+
+    // Allow clicking the backdrop to close the sidebar on mobile
+    const backdropEl = document.getElementById('sidebar-backdrop');
+    if (backdropEl) backdropEl.addEventListener('click', () => applySidebarState(false));
+
+    // On breakpoint cross, reset to defaults (desktop=expanded, mobile=collapsed)
+    let lastIsDesktop = isDesktop;
+    window.addEventListener('resize', () => {
+        const nowDesktop = window.innerWidth >= 768;
+        if (nowDesktop !== lastIsDesktop) {
+            applySidebarState(nowDesktop);
+            lastIsDesktop = nowDesktop;
+        }
+    });
 });
