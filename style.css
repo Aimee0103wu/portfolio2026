@@ -27,3 +27,78 @@
     width: 32px;
     height: 32px;
 }
+
+#show-all-toggle {
+    position: fixed;
+    top: 40px; 
+    right: 40px;
+    z-index: 100;
+    padding: 12px 24px; /* Slightly chunkier */
+    border-radius: 9999px;
+    font-size: 11px;
+    font-weight: 800; /* Extra bold for that tech aesthetic */
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+    border: none;
+    
+    /* Solid Rest State */
+    background-color: #111827; /* Deep Charcoal */
+    color: #ffffff;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.2);
+}
+
+#show-all-toggle .icon-container svg {
+    stroke-width: 2.5px; /* Makes the SVG lines thicker/more solid */
+    color: #ffffff;
+}
+
+#show-all-toggle:hover {
+    transform: translateY(-2px) scale(1.02);
+    background-color: #1f2937; /* Slightly lighter on hover */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+/* Ensure the blue state is also solid when active */
+.view-mode-active {
+    background-color: #2563eb !important;
+    color: #ffffff !important;
+}
+
+/* Fix for the Home Page Margin Issue */
+.user-message-instance:first-child {
+    margin-top: 40px !important;
+}
+
+#show-all-toggle svg {
+    /* Prevents the SVG from shrinking if the text wraps */
+    flex-shrink: 0;
+}
+
+/* Animation for the "Show All" reveal */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.reveal-item {
+    opacity: 0; /* Start hidden */
+    animation: fadeInUp 0.5s ease-out forwards;
+}
+
+/* Optional: Stagger the items slightly so they pop in one by one */
+.reveal-item:nth-child(1) { animation-delay: 0.1s; }
+.reveal-item:nth-child(2) { animation-delay: 0.2s; }
+.reveal-item:nth-child(3) { animation-delay: 0.3s; }
+.reveal-item:nth-child(4) { animation-delay: 0.4s; }
+.reveal-item:nth-child(5) { animation-delay: 0.5s; }
