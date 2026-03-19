@@ -82,6 +82,9 @@ window.toggleViewMode = function() {
     const btnText = btn.querySelector('span');
     const btnIcon = btn.querySelector('.icon-container');
 
+    // Umami event tracking
+    if (window.umami) umami.track('toggle-full-view', { mode: !isFullViewMode });
+
     if (isFullViewMode) {
         btnText.textContent = "Back to Chat";
         btn.style.backgroundColor = "#2563eb"; // Solid Blue
@@ -127,6 +130,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     window.startProject = function(projectId) {
         if (isTyping) return;
+
+        // Umami event tracking
+        if (window.umami) umami.track('project-click', { project: projectId });
+
         if (currentProjectId) saveState(currentProjectId, projectMessages.innerHTML);
         if (typeof PROJECT_CONTENT === 'undefined' || !PROJECT_CONTENT[projectId]) return;
         currentProjectId = projectId;
@@ -238,6 +245,10 @@ document.addEventListener('DOMContentLoaded', () => {
             btn.innerHTML = step.html;
             btn.onclick = () => {
                 if (isTyping) return;
+
+                // Umami event tracking
+                if (window.umami) umami.track('prompt-click', { project: projectId, prompt: step.key });
+
                 if (step.key === 'home') window.goHome();
                 else { addUserMessage(btn.innerText.trim()); setTimeout(() => { typeMessage(PROJECT_CONTENT[projectId][step.key]); }, 400); }
             };
@@ -263,6 +274,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // --- RESUME MODAL ---
     window.viewResume = function() {
+
+        // Umami event tracking
+        if (window.umami) umami.track('view-resume');
+
         const modal = document.getElementById('resume-modal');
         if (modal) {
             modal.classList.remove('hidden');
