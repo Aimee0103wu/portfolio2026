@@ -110,6 +110,33 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (promptContainer) defaultHomePrompts = promptContainer.innerHTML;
 
+    if (promptContainer) {
+        promptContainer.addEventListener('click', (e) => {
+            // Find if a button (or something inside a button) was clicked
+            const btn = e.target.closest('button');
+            if (!btn || isTyping) return;
+
+            // Check if we are on the Home screen
+            if (currentProjectId === 'home') {
+                const text = btn.innerText.trim();
+                
+                // Map the button text to your GENERAL_ANSWERS keys in content.js
+                let key = '';
+                if (text.includes('work together')) key = 'contact';
+                if (text.includes('stack')) key = 'stack';
+                if (text.includes('philosophy')) key = 'philosophy';
+
+                if (key && typeof GENERAL_ANSWERS !== 'undefined') {
+                    // Trigger the UI flow
+                    window.addUserMessage(text);
+                    setTimeout(() => { 
+                        window.typeMessage(GENERAL_ANSWERS[key]); 
+                    }, 400);
+                }
+            }
+        });
+    }
+
     window.goHome = function() {
         if (isTyping) return;
         if (currentProjectId) saveState(currentProjectId, projectMessages.innerHTML);
